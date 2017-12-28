@@ -11,8 +11,9 @@ Secondary inquiry: How do we define accurate prediction or ground truth with uns
 
 ### Data
 -	Sensor data collected on:
--	Temperature
--	Humidity
+-	Temperature (primary)
+-	Humidity (primary)
+- Barometry (primary)
 -	Luminosity
 -	Sound (amplitude at a certain sample rate)
 -	Particle detection
