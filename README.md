@@ -3,7 +3,7 @@ Repo for working experiments around the home.
 
 ## RESEARCH PROJECT #1: Unsupervised classification and event detection for environmental sensors (temp, humidity, barometry)
 
-***Primary inquiry: Can we develop an unsupervised classification model that consistently (and accurately*) predicts classes or “states” of the natural environment as determined by sensor data?***
+***Primary inquiry: Can we develop an unsupervised classification model that consistently (and accurately) predicts classes or “states” of the natural environment as determined by sensor data?***
 
 Secondary inquiry: How do we define accurate prediction or ground truth with unsupervised methods? I.e. In conventional unsupervised learning, the classes/labels are not available for training, but are still used in model evaluation. How is such validation done when the classes/labels do not exist explicitly?
 
