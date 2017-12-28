@@ -23,16 +23,16 @@ Secondary inquiry: How do we define accurate prediction or ground truth with uns
 ### Methods 
 The following are possible methods to implement - I’ll seek NYU/CUSP guidance on narrowing this w.r.t. the research goals.
 -	Unsupervised machine learning
--	Cluster analysis
+-	Cluster analysis 
 -	K-means
 -	Gaussian Mixture Models
 -	DBSCAN
 -	Hierarchical clustering
--	Self-Organizing Maps (SOM) (lit here using SOM on sleep sounds, more on SOM)
+-	Self-Organizing Maps (SOM) ([lit here using SOM on sleep sounds](https://books.google.com/books?hl=en&lr=&id=aDysDAAAQBAJ&oi=fnd&pg=PA460&dq=self+organizing+maps&ots=sHsXMe9wul&sig=ucEpvJFn2SuxeYs8ZgzIxwG4cEI#v=onepage&q=self%20organizing%20maps&f=false), [more on SOM](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.30.4343))  
 -	Neural networks
--	Deep belief networks (literature here on use in computer vision - transferrable?) 
--	Recurrent Neural Networks (lit here)
--	Lit here on using NN with sensor data
+-	Deep belief networks ([literature here on use in computer vision](https://dl.acm.org/citation.cfm?id=1553453) - transferrable?) 
+-	Recurrent Neural Networks ([lit here](https://papyrus.bib.umontreal.ca/xmlui/handle/1866/14019))
+-	[Lit here on using NN with sensor data](http://ieeexplore.ieee.org/document/7495528/?tp=&arnumber=7495528&url=http:%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D7495528)
 -	Naive Bayes classifier
  
 ### Key considerations for experimental design
@@ -49,7 +49,7 @@ Hypotheses framed around comparing these categories of factors
 -	Characterize as time series?
 -	What cross-validation approach? (probably K-folds)
 -	***What validation criteria?*** Key to secondary research question
--	Internal vs external validation techniques (survey on internal and external indexes here)
+-	Internal vs external validation techniques ([survey on internal and external indexes here](http://www.universitypress.org.uk/journals/cc/20-463.pdf))
 -	Internal: cluster stability (compared across training/cross-validation)
 -	Internal: intra-group similarity and inter-group contrast/separation
 -	Jaccard similarity/distance?
@@ -70,7 +70,7 @@ Hypotheses framed around comparing these categories of factors
 -	Collection, aggregation, and pre-processing in situ
 -	However, training dataset will likely need to be collected and used retroactively - cross-validation techniques seem really complicated in a streaming/online learning scenario (but note for future research)
 -	Testing and evaluation (perhaps some model/parameter tuning) can occur in real-time in situ
--	Virtual environment (I found an RPI emulator and am testing it, could be helpful for testing various pre-processing and ML scripts virtually before trying on device)
+-	Virtual environment ([I found an RPI emulator](http://snorfi.us/raspiemu/#main) and am testing it, could be helpful for testing various pre-processing and ML scripts virtually before trying on device)
 -	Sensor data
 -	Ultimate goal is use in the field, so will plan to use the same sensors as deployed in external locations, but might consider additions if feature engineering / model training hits a wall
 
