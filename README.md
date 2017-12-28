@@ -33,8 +33,6 @@ The following are possible methods to implement - I’ll seek NYU/CUSP guidance 
 -	Recurrent Neural Networks (lit here)
 -	Lit here on using NN with sensor data
 -	Naive Bayes classifier
-
-
  
 ### Key considerations for experimental design
 Hypotheses framed around comparing these categories of factors
@@ -75,24 +73,23 @@ Hypotheses framed around comparing these categories of factors
 -	Sensor data
 -	Ultimate goal is use in the field, so will plan to use the same sensors as deployed in external locations, but might consider additions if feature engineering / model training hits a wall
 
-
 ### Methodology
--	1A. Create testable groups of:
+1A. Create testable groups of:
   -	 Features from the data
   -  ML models
   -	 Model hyper-parameters (e.g. learning rate, regularization, etc)
   -	 Validation techniques
 
--	1B. Build sensor cluster with Raspberry Pi and start collecting raw data
+1B. Build sensor cluster with Raspberry Pi and start collecting raw data
 
--	2. Develop data pre-processing scripts for RPi as appropriate (once there’s a plan for what features to analyze)
+2. Develop data pre-processing scripts for RPi as appropriate (once there’s a plan for what features to analyze)
 
--	3. Train and cross-validate data
+3. Train and cross-validate data
   -	Objective: What are the optimal features, models, and parameters needed to achieve acceptable cluster validation? (i.e. stability, similarity, ensemble agreement, etc)
 
--	4. Once the objective of Step 3 has been met, test on new data (i.e. newly collected sensor data). Two broad outcomes:
-  -	Models fail to meet validation threshold on test data….back to the drawing board (need more data? Different features or models?)
-  -	Models succeeds in meeting validation threshold:
+4. Once the objective of Step 3 has been met, test on new data (i.e. newly collected sensor data). Two broad outcomes:
+-	Models fail to meet validation threshold on test data….back to the drawing board (need more data? Different features or models?)
+-	Models succeeds in meeting validation threshold:
     -	Analyze properties of the emergent classes the models produce by empirical/observable features and statistical analysis
     -	Applied research: repeat in external locations (ultimately trying to establish a baseline classification schema that could be used to detect trends, anomalies, etc)
     -	Continue functional research: add more sensors/types of sensor data; determine if this can be used for sensor diagnostics, etc.
