@@ -19,7 +19,7 @@ root = sys.argv[1]
 def write_csv(data):
 	"Write data to .csv file"
 
-	fname = os.path.join(root, 'test_data.csv')
+	fname = os.path.join(root, 'data.csv')
 
 	with open(fname, 'a') as f:
 		w = csv.writer(f)
