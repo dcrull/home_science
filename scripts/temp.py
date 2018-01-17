@@ -19,13 +19,16 @@ root = sys.argv[1]
 def write_csv(data):
 	"Write data to .csv file"
 
-	fname = os.path.join(root, 'test_data.csv')
-
-	with open(fname, 'a') as f:
-		w = csv.writer(f)
-		w.writerow(data)
-
-	f.close()
+	fname = os.path.join(root, 'data.csv')
+	try:
+		with open(fname, 'a') as f:
+			w = csv.writer(f)
+			w.writerow(data)
+		f.close()
+	except IOError:
+		time.sleep(5)
+		write_csv(data)
+		
 
 def main(bme280):
 	"Collect data"
