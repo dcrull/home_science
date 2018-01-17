@@ -20,6 +20,7 @@ def write_csv(data):
 	"Write data to .csv file"
 
 	fname = os.path.join(root, 'data.csv')
+
 	try:
 		with open(fname, 'a') as f:
 			w = csv.writer(f)
@@ -28,8 +29,9 @@ def write_csv(data):
 	except IOError:
 		time.sleep(5)
 		write_csv(data)
-		
-
+	
+	return
+	
 def main(bme280):
 	"Collect data"
 
@@ -52,6 +54,8 @@ def main(bme280):
 
 		# write to csv
 		write_csv(data)
+	return
+
 
 if __name__ == '__main__':
 	GPIO.setmode(GPIO.BCM)
